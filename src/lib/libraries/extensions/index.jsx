@@ -27,7 +27,10 @@ import wedoPeripheralImage from './peripheral-connection/wedo/wedo-illustration.
 import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
 
+import toio from 'toio-visual-programming';
+
 export default [
+    toio.gui.INFO,
     {
         name: (
             <FormattedMessage
