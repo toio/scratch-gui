@@ -69,7 +69,7 @@ class GUI extends React.Component {
     setReduxTitle (newTitle) {
         if (newTitle === null || typeof newTitle === 'undefined') {
             this.props.onUpdateReduxProjectTitle(
-                this.props.intl.formatMessage(messages.defaultProjectTitle)
+                this.props.intl.formatMessage(messages.defaultProjectTitle).replace(/\s?Scratch[\sの]?/g, '')
             );
         } else {
             this.props.onUpdateReduxProjectTitle(newTitle);

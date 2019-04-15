@@ -4,7 +4,7 @@ import React from 'react';
 import {injectIntl, intlShape, defineMessages} from 'react-intl';
 import VM from 'scratch-vm';
 
-import spriteLibraryContent from '../lib/libraries/sprites.json';
+import spriteLibraryContent from '../lib/libraries/sprites.js';
 import randomizeSpritePosition from '../lib/randomize-sprite-position';
 import spriteTags from '../lib/libraries/sprite-tags';
 

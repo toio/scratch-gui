@@ -4,7 +4,7 @@ import React from 'react';
 import {defineMessages, injectIntl, intlShape} from 'react-intl';
 import VM from 'scratch-vm';
 
-import costumeLibraryContent from '../lib/libraries/costumes.json';
+import costumeLibraryContent from '../lib/libraries/costumes.js';
 import spriteTags from '../lib/libraries/sprite-tags';
 import LibraryComponent from '../components/library/library.jsx';
 

@@ -69,7 +69,8 @@ import remixIcon from './icon--remix.svg';
 import dropdownCaret from './dropdown-caret.svg';
 import languageIcon from '../language-selector/language-icon.svg';
 
-import scratchLogo from './scratch-logo.svg';
+// import scratchLogo from './scratch-logo.svg';
+import scratchLogo from 'toio-visual-programming/src/images/logo_s.svg';
 
 import sharedMessages from '../../lib/shared-messages';
 
@@ -479,6 +480,7 @@ class MenuBar extends React.Component {
                         aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
                         className={classNames(styles.menuBarItem, styles.hoverable)}
                         onClick={this.props.onOpenTipLibrary}
+                        style={{visibility: "hidden"}}
                     >
                         <img
                             className={styles.helpIcon}
@@ -508,7 +510,7 @@ class MenuBar extends React.Component {
                             username={this.props.authorUsername}
                         />
                     ) : null)}
-                    <div className={classNames(styles.menuBarItem)}>
+                    <div className={classNames(styles.menuBarItem)} style={{visibility: "hidden"}}>
                         {this.props.canShare ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
                                 <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
@@ -536,7 +538,7 @@ class MenuBar extends React.Component {
                         )}
                         {this.props.canRemix ? remixButton : []}
                     </div>
-                    <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)}>
+                    <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)} style={{visibility: "hidden"}}>
                         {this.props.enableCommunity ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
                                 <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
@@ -564,7 +566,7 @@ class MenuBar extends React.Component {
 
                 {/* show the proper UI in the account menu, given whether the user is
                 logged in, and whether a session is available to log in with */}
-                <div className={styles.accountInfoGroup}>
+                <div className={styles.accountInfoGroup} style={{visibility: "hidden"}}>
                     <div className={styles.menuBarItem}>
                         {this.props.canSave && (
                             <SaveStatus />

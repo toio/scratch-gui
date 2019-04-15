@@ -1,6 +1,8 @@
 import ScratchStorage from 'scratch-storage';
 
-import defaultProject from './default-project';
+// import defaultProject from './default-project';
+import toio from 'toio-visual-programming';
+const defaultProject = toio.gui.DEFAULT_PROJECT;
 
 /**
  * Wrapper for ScratchStorage which adds default web sources.

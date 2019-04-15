@@ -38,7 +38,7 @@ import cameraIcon from '../components/action-menu/icon--camera.svg';
 import surpriseIcon from '../components/action-menu/icon--surprise.svg';
 import searchIcon from '../components/action-menu/icon--search.svg';
 
-import costumeLibraryContent from '../lib/libraries/costumes.json';
+import costumeLibraryContent from '../lib/libraries/costumes.js';
 import backdropLibraryContent from '../lib/libraries/backdrops.json';
 
 let messages = defineMessages({

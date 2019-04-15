@@ -9,7 +9,8 @@ import TitledHOC from '../lib/titled-hoc.jsx';
 import log from '../lib/log.js';
 
 const onClickLogo = () => {
-    window.location = 'https://scratch.mit.edu';
+    // window.location = 'https://scratch.mit.edu';
+    window.location = 'https://toio.io/programming/visual-programming.html';
 };
 
 const handleTelemetryModalCancel = () => {
@@ -75,7 +76,7 @@ export default appTarget => {
                 onTelemetryModalOptOut={handleTelemetryModalOptOut}
             /> :
             <WrappedGui
-                backpackVisible
+                backpackVisible={false}
                 showComingSoon
                 backpackHost={backpackHost}
                 canSave={false}
